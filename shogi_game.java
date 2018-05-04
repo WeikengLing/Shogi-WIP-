@@ -17,9 +17,9 @@ public class shogi_game extends JApplet
     private final int APPLET_HEIGHT = 720;
     
     //create the board, two players
-    k,
+    
     private Board gameboard;
-    private ;
+    //private ;
     
     /**
      * Creates the initial environmet - buildings, sun, moon, ground, and applet size
