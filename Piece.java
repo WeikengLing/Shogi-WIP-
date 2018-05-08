@@ -8,18 +8,23 @@ public abstract class Piece
 {
     private String name;
     private String type;
+    private int x;
+    private int y;
     private int controller;
     
-
-    /**
-     * Move
-     * 
-     * @param  y    a sample parameter for a method
-     * @return        the sum of x and y 
-     */
+    public int getX()
+    {
+        return x;
+    }
+    
+    public int getY()
+    {
+        return y;
+    }
+    
     public void move()
     {
         // put your code here
-        return x + y;
+        int i = getX() + getY();
     }
 }
