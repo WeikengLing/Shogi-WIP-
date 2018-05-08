@@ -1,33 +1,38 @@
+import java.awt.*;
 
 /**
  * Write a description of class BoardSpace here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Melissa Chen 
+ * @version 1.0 5/8/2018
  */
 public class BoardSpace
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
+    private int xpos;
+    private int ypos;
+    
     /**
-     * Constructor for objects of class BoardSpace
-     */
-    public BoardSpace()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
      * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
      */
-    public int sampleMethod(int y)
+    public BoardSpace(int x, int y)
     {
-        // put your code here
-        return x + y;
+        this.xpos = x;
+        this.ypos = y;
+    }
+    
+    /**
+     * 
+     */
+    public void draw(Graphics g)
+    {
+        //sets the value of a new color "building gray" to a dark/concrete color 
+        Color boardcolor = new Color(238, 191, 129);
+        Color bordercolor = new Color(0,0,0);
+        g.setColor(boardcolor);
+        
+        //draws and fills a rectangle at the inputted location using the inputted height and width
+        g.fillRect(xpos,ypos,width,height);
+        
+        
     }
 }
