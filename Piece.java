@@ -22,9 +22,12 @@ public abstract class Piece
         return y;
     }
     
-    public void move()
+    public String getCoordinate()
     {
-        // put your code here
-        int i = getX() + getY();
+        return x + "-" + y + " --> " + x + "-"  + y;
     }
+    
+    public abstract void move();
+    
+    public abstract boolean canMove();
 }
